@@ -1,14 +1,14 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk"
 
-let OriginalNum:number=50;
-
+let OriginalNum:number=Math.floor(Math.random()*51);
 
 for(let i=0;i<Infinity;i++){
     let GuessNum=await inquirer.prompt([{
         name:"Guess",
         type:"number",
-        message:"Guess the Number between 1 to 100:"
+        message:"Guess the Number between 1 to 50:"
     }])
 
     if(GuessNum.Guess<OriginalNum){
@@ -16,9 +16,9 @@ for(let i=0;i<Infinity;i++){
         let Choice=await inquirer.prompt([{
             name:"Ch",
             type:"string",
-            message:chalk.blue("Do You Want to play Again..??")
+            message:chalk.blue("Do You Want to play Again..??write Yes or No")
         }])
-        if(Choice.Ch=="Yes"){
+        if(Choice.Ch=="Yes" || Choice.ch=="yes"){
             continue
         }
         else{
@@ -30,9 +30,9 @@ for(let i=0;i<Infinity;i++){
         let Choice=await inquirer.prompt([{
             name:"Ch",
             type:"string",
-            message:chalk.blue("Do You Want to play Again..??")
+            message:chalk.blue("Do You Want to play Again..??write Yes or No")
         }])
-        if(Choice.Ch=="Yes"){
+        if(Choice.Ch=="Yes" || Choice.ch=="yes"){
             continue
         }
         else{
