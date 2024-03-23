@@ -1,5 +1,8 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
+//Please run "npm install inquirer" to use it
 import chalk from "chalk";
+//Please run "npm install chalk" to use it
 let YourChoice = await inquirer.prompt([{
         name: "Choice",
         type: "string",
