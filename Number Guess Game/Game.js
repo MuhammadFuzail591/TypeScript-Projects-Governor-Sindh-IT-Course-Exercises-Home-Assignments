@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
-import chalk from "chalk";
+//You will have to run command "npm install inquirer" to use this code
+import chalk from "chalk"
+//Also run "npm install chalk"
 let OriginalNum = Math.floor(Math.random() * 51);
 for (let i = 0; i < Infinity; i++) {
     let GuessNum = await inquirer.prompt([{
