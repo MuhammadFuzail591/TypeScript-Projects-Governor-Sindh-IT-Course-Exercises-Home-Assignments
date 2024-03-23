@@ -1,6 +1,8 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+//You will have to run command "npm install inquirer" to use this code
 import chalk from "chalk"
+//Also run "npm install chalk"
 
 let OriginalNum:number=Math.floor(Math.random()*51);
 
