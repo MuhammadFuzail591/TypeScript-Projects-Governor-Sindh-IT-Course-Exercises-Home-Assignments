@@ -1,9 +1,11 @@
 {
-  "name": "number-guess-game",
+  "name": "fzl-number-guess-game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
+"bin":{
+  "multiply":"./Game.js"
+},
   "dependencies": {
     "ansi-escapes": "^4.3.2",
     "ansi-regex": "^5.0.1",
@@ -76,5 +78,6 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT",
+  "description": ""
 }
